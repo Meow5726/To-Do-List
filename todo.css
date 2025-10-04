@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+    background: linear-gradient(to bottom,rgb(63, 1, 27),rgb(245, 84, 151));
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#d1{
+    width: 300px;
+    height: 20px;
+    padding: 20px;
+    background-color: rgb(253, 202, 211);
+    border: 2px solid  black;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 30px auto;
+    background-color: rgb(253, 202, 211);
+    padding: 5px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+#s{
+    width: 250px;
+    padding: 7px;
+    background-color: white;
+    border: 2px solid rgb(253, 202, 211) ;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+}
+#a{
+    width: 75px;
+    padding: 7px;
+    background-color: white;
+    border: 2px solid rgb(253, 202, 211) ;
+    border-radius: 50px;
+    color: black;
+}
+#note{
+    margin: 10px auto;
+    background-color: rgb(253, 202, 211);
+    padding: 1px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+#title{
+    width: 450px;
+    height: 350px;
+    padding: 20px;
+    background-color: rgb(253, 202, 211);
+    border: 2px solid  black;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+li{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+button{
+    margin-left: 10px;
+    width: 67px;
+    padding: 4px;
+    background-color: white;
+    border: 2px solid rgb(253, 202, 211) ;
+    border-radius: 50px;
+    color: black;
+}
+@keyframes cross{
+    0% { opacity: 0;};
+    50% { opacity: 1;};
+    100% { opacity: 0;};
+}
+button:active{
+    animation: cross 2s ease-in;
+}
+.hide{
+    visibility: hidden;
+}
+.cut{
+    text-decoration: line-through;
+}
+@media (max-width: 600px) {
+  #d1 {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  #s {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #a {
+    width: 100%;
+  }
+
+  #title {
+    width: 90%;
+    height: auto;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  button {
+    width: 60px;
+    padding: 6px;
+    font-size: 14px;
+  }
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: gray;
+  transition: all 0.5s ease;
+}
+.b{
+    background-color: rgb(57, 199, 156);
+}
+.r{
+    background-color: rgb(224, 61, 61);
+    color: #fff;
+}
+h3{
+    color: #fff ;
+}
